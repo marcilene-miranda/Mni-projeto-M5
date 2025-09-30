@@ -1,0 +1,59 @@
+.sobre {
+  background: linear-gradient(135deg, #1a0033, #0d0d2b);
+  color: #f0f0f5;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Container centralizado */
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: justify;
+}
+
+/* Título */
+.titulo {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #76c7ff, #bb86fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Parágrafos */
+.texto {
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  padding-left: 18px;
+  border-left: 3px solid #76c7ff;
+  transition: all 0.3s ease;
+}
+
+.texto strong {
+  color: #ff79c6;
+}
+
+/* Efeito hover leve nos parágrafos */
+.texto:hover {
+  transform: translateX(5px);
+  border-left-color: #ff79c6;
+  color: #dcd6ff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2.2rem;
+  }
+  .texto {
+    font-size: 1rem;
+  }
+}
