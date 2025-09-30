@@ -45,6 +45,7 @@
   transition: color 0.3s ease;
 }
 
+/* Efeito underline animado nos links */
 .menu li a::after {
   content: "";
   position: absolute;
@@ -52,4 +53,28 @@
   bottom: -4px;
   width: 0%;
   height: 2px;
-  background: linear-gradient(90deg, #ff79c6,
+  background: linear-gradient(90deg, #ff79c6, #bb86fc, #76c7ff);
+  transition: width 0.3s ease;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+.menu li a:hover {
+  color: #ff79c6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .containerMenu {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  .menu {
+    margin-top: 0.8rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
